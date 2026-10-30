@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EPIC — movies, comedy, music, drama and books from Africa and beyond.">
-  <meta name="theme-color" content="#0b0d0e">
-  <title>EPIC — Entertainment Without Limits</title>
-  <style>
-    :root{--bg:#0b0d0e;--panel:#15191b;--panel2:#1d2325;--text:#f6f6f1;--muted:#a8b0b1;--gold:#e5ed55;--line:#30383a}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;background:#0b0d0eef;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
-    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:1.8rem;font-weight:900;letter-spacing:2px;color:var(--gold)}
-    nav{display:flex;gap:22px;color:var(--muted);font-size:.95rem}nav a:hover{color:var(--gold)}
-    .btn{display:inline-block;background:var(--gold);color:#101212;font-weight:800;padding:12px 19px;border-radius:9px;border:0}
-    .hero{padding:76px 0 65px;background:radial-gradient(ellipse at 80% 20%,#42491b55,transparent 45%)}
-    .eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
-    h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.02;max-width:760px;margin:15px 0}
-    .hero p{max-width:620px;color:var(--muted);font-size:1.1rem}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
-    .notice{margin-top:35px;padding:13px 16px;border:1px solid #5a6027;border-radius:10px;color:#e7e9bc;background:#202414;max-width:700px;font-size:.9rem}
-    section{padding:52px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}
-    h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:0}.section-head p{color:var(--muted);margin:5px 0 0}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}
-    .art{height:145px;display:grid;place-items:center;font-size:2.8rem;background:linear-gradient(135deg,#333b25,#182022);color:var(--gold)}
-    .card-body{padding:16px}.card h3{margin:0 0 5px}.card p{margin:0;color:var(--muted);font-size:.9rem}
-    .feature{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
-    .feature-art{min-height:230px;border-radius:14px;background:linear-gradient(135deg,#41491b,#172022);display:grid;place-items:center;font-size:5rem;color:var(--gold)}
-    .feature p{color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:14px}.step b{color:var(--gold);font-size:1.3rem}
-    .cta{background:var(--gold);color:#111;padding:32px;border-radius:18px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta p{margin:5px 0 0}
-    .cta .btn{background:#111;color:var(--gold);white-space:nowrap}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:800px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero{padding-top:55px}}
-    @media(max-width:440px){.grid{grid-template-columns:1fr 1fr;gap:10px}.art{height:110px}.card-body{padding:12px}.cta{align-items:flex-start;flex-direction:column}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EPIC — entertainment without boundaries. Discover movies, comedy, music, drama, books and videos.">
+<meta name="theme-color" content="#080808">
+<title>EPIC — Entertainment Without Boundaries</title>
+<style>
+:root{--bg:#080808;--panel:#151515;--panel2:#202020;--text:#f7f4e9;--muted:#b9b5a9;--gold:#f5bd19;--line:#393329}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#080808ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:1.9rem;font-weight:900;letter-spacing:2px;color:var(--gold);display:flex;align-items:center;gap:10px}
+.brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+nav{display:flex;gap:22px;color:var(--muted);font-size:.95rem}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:linear-gradient(135deg,#ffe36a,#e5a900);color:#111;font-weight:800;padding:12px 19px;border-radius:9px;border:0}
+.hero{padding:52px 0 65px;background:radial-gradient(ellipse at 75% 15%,#805b1233,transparent 48%)}
+.hero-logo{display:block;width:min(100%,390px);height:auto;margin:0 auto 28px;border-radius:16px}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.7rem,7vw,5.2rem);line-height:1.02;max-width:760px;margin:15px 0}
+.hero p{max-width:620px;color:var(--muted);font-size:1.1rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--gold)}
+.notice{margin-top:35px;padding:13px 16px;border:1px solid #8a671e;border-radius:10px;color:#f3dfaa;background:#211a0d;max-width:700px;font-size:.9rem}
+section{padding:52px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:0}.section-head p{color:var(--muted);margin:5px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.art{height:145px;display:grid;place-items:center;font-size:2.8rem;background:linear-gradient(135deg,#503a0d,#17130b);color:var(--gold)}
+.card-body{padding:16px}.card h3{margin:0 0 5px}.card p{margin:0;color:var(--muted);font-size:.9rem}
+.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+.feature-art{min-height:230px;border-radius:14px;background:linear-gradient(135deg,#503a0d,#17130b);display:grid;place-items:center;font-size:5rem;color:var(--gold)}
+.feature p{color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:14px}.step b{color:var(--gold);font-size:1.3rem}
+.cta{background:linear-gradient(120deg,#f8d34c,#d99b08);color:#111;padding:32px;border-radius:18px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta p{margin:5px 0 0}
+.cta .btn{background:#111;color:var(--gold);white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.hero{padding-top:35px}}
+@media(max-width:440px){.grid{gap:10px}.art{height:110px}.card-body{padding:12px}.cta{align-items:flex-start;flex-direction:column}.hero-logo{max-width:310px}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="#">EPIC</a>
-  <nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#creators">For Creators</a><a href="#about">About</a></nav>
-  <a class="btn" href="#join">Get Started</a>
+<a class="brand" href="#"><img src="epic-logo.png" alt="EPIC logo">EPIC</a>
+<nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#creators">For Creators</a><a href="#about">About</a></nav>
+<a class="btn" href="#join">Get Started</a>
 </div></header>
 <main>
-  <section class="hero"><div class="wrap">
-    <div class="eyebrow">Africa's stories. One destination.</div>
-    <h1>Entertainment without limits.</h1>
-    <p>Discover movies, comedy, drama, music and books from African creators and storytellers. Find your next favourite on EPIC.</p>
-    <div class="actions"><a class="btn" href="#explore">Explore EPIC</a><a class="btn secondary" href="#creators">I'm a creator</a></div>
-    <div class="notice"><strong>EPIC is getting ready.</strong> This is our first website preview. Streaming, downloads, creator accounts and payments will be introduced in later stages.</div>
-  </div></section>
-  <section id="explore"><div class="wrap">
-    <div class="section-head"><div><h2>Explore your entertainment</h2><p>Something for every mood.</p></div></div>
-    <div class="grid">
-      <article class="card"><div class="art">🎬</div><div class="card-body"><h3>Movies</h3><p>Films and original stories.</p></div></article>
-      <article class="card"><div class="art">😂</div><div class="card-body"><h3>Comedy</h3><p>Laugh, share and enjoy.</p></div></article>
-      <article class="card"><div class="art">🎵</div><div class="card-body"><h3>Music</h3><p>Sounds from every corner.</p></div></article>
-      <article class="card"><div class="art">📚</div><div class="card-body"><h3>Books</h3><p>Read new voices and ideas.</p></div></article>
-    </div>
-  </div></section>
-  <section id="creators"><div class="wrap"><div class="feature">
-    <div><div class="eyebrow">Made for creators</div><h2>Your talent deserves an audience.</h2>
-      <p>EPIC aims to give filmmakers, comedians, musicians, writers and other creators a place to showcase their work and build an audience.</p>
-      <a class="btn" href="#join">Creator access — coming soon</a></div>
-    <div class="feature-art">✦</div>
-  </div></div></section>
-  <section id="about"><div class="wrap">
-    <div class="section-head"><div><h2>How EPIC will grow</h2><p>Building carefully, one stage at a time.</p></div></div>
-    <div class="steps">
-      <div class="step"><b>01</b><h3>Discover</h3><p>Browse entertainment and find creators you love.</p></div>
-      <div class="step"><b>02</b><h3>Create</h3><p>Creators will be able to submit content for review.</p></div>
-      <div class="step"><b>03</b><h3>Connect</h3><p>Accounts, payments and creator tools will follow after setup and testing.</p></div>
-    </div>
-  </div></section>
-  <section id="join"><div class="wrap"><div class="cta">
-    <div><h2>Be part of the EPIC journey.</h2><p>Our platform is under development. Check back as new features arrive.</p></div>
-    <a class="btn" href="mailto:AskofEpic@gmail.com?subject=EPIC%20Platform%20Enquiry">Contact EPIC</a>
-  </div></div></section>
+<section class="hero"><div class="wrap">
+<img class="hero-logo" src="epic-logo.png" alt="EPIC — Entertainment Without Boundaries">
+<div class="eyebrow">Africa's stories. One destination.</div>
+<h1>Entertainment without boundaries.</h1>
+<p>Discover movies, comedy, drama, music, books and videos from African creators and storytellers. Find your next favourite on EPIC.</p>
+<div class="actions"><a class="btn" href="#explore">Explore EPIC</a><a class="btn secondary" href="#creators">I'm a creator</a></div>
+<div class="notice"><strong>EPIC is getting ready.</strong> This is our first website preview. Streaming, downloads, creator accounts and payments will be introduced in later stages.</div>
+</div></section>
+<section id="explore"><div class="wrap">
+<div class="section-head"><div><h2>Explore your entertainment</h2><p>Something for every mood.</p></div></div>
+<div class="grid">
+<article class="card"><div class="art">🎞️</div><div class="card-body"><h3>Movies</h3><p>Films and original stories.</p></div></article>
+<article class="card"><div class="art">😂</div><div class="card-body"><h3>Comedy</h3><p>Laugh, share and enjoy.</p></div></article>
+<article class="card"><div class="art">🎵</div><div class="card-body"><h3>Music</h3><p>Sounds from every corner.</p></div></article>
+<article class="card"><div class="art">🎭</div><div class="card-body"><h3>Drama</h3><p>Stories that move you.</p></div></article>
+<article class="card"><div class="art">📚</div><div class="card-body"><h3>Books</h3><p>Read new voices and ideas.</p></div></article>
+<article class="card"><div class="art">📹</div><div class="card-body"><h3>Videos</h3><p>Discover fresh video content.</p></div></article>
+</div></div></section>
+<section id="creators"><div class="wrap"><div class="feature">
+<div><div class="eyebrow">Made for creators</div><h2>Your talent deserves an audience.</h2>
+<p>EPIC aims to give filmmakers, comedians, musicians, writers and other creators a place to showcase their work and build an audience.</p>
+<a class="btn" href="#join">Creator access — coming soon</a></div>
+<div class="feature-art">✦</div>
+</div></div></section>
+<section id="about"><div class="wrap">
+<div class="section-head"><div><h2>How EPIC will grow</h2><p>Building carefully, one stage at a time.</p></div></div>
+<div class="steps">
+<div class="step"><b>01</b><h3>Discover</h3><p>Browse entertainment and find creators you love.</p></div>
+<div class="step"><b>02</b><h3>Create</h3><p>Creators will be able to submit content for review.</p></div>
+<div class="step"><b>03</b><h3>Connect</h3><p>Accounts, payments and creator tools will follow after setup and testing.</p></div>
+</div></div></section>
+<section id="join"><div class="wrap"><div class="cta">
+<div><h2>Be part of the EPIC journey.</h2><p>Our platform is under development. Check back as new features arrive.</p></div>
+<a class="btn" href="mailto:AskofEpic@gmail.com?subject=EPIC%20Platform%20Enquiry">Contact EPIC</a>
+</div></div></section>
 </main>
-<footer><div class="wrap foot"><span>© 2026 EPIC. All rights reserved.</span><span>Movies · Comedy · Music · Drama · Books</span></div></footer>
+<footer><div class="wrap foot"><span>© 2026 EPIC. All rights reserved.</span><span>Movies · Comedy · Music · Drama · Books · Videos</span></div></footer>
 </body></html>
