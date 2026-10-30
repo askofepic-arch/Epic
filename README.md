@@ -1,2 +1,2 @@
 # Epic
-Home of movies, comedies.
+Home of movies, comedies, music and books
